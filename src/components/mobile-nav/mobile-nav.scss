@@ -7,10 +7,20 @@ $purple: #8974f0;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  cursor: pointer;
 
   .hi-menu-alt-3 {
-    font-size: 40px;
+    font-size: 35px;
     color: $purple;
   }
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 100%;
+  border: 1px solid red;
 }
