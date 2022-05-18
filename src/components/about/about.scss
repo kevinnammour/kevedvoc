@@ -1,0 +1,57 @@
+$purple: #8974f0;
+$purple-shadow: #8974f0a8;
+
+.about-wrapper {
+//   background-color: red;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .desc-wrapper {
+    width: 500px;
+    height: 500px;
+    // background-color: blue;
+
+    .desc-header {
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .btns {
+      .lets-talk {
+        padding: 15px 20px;
+        border-radius: 20px;
+        outline: none;
+        background-color: $purple;
+        border: none;
+
+        span {
+          background-color: $purple;
+          color: white;
+        }
+
+        .icon {
+          color: white;
+          background-color: $purple;
+        }
+      }
+    }
+
+    .social-media {
+    }
+  }
+
+  .image-wrapper {
+    width: 600px;
+    height: 500px;
+    // background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
