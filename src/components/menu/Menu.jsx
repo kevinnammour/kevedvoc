@@ -11,16 +11,16 @@ const Menu = () => {
       </div>
       <div className="menu-wrapper-child menu-list">
         <a href="" className="m-3">
-          Abouts
+          About
         </a>
         <a href="" className="m-3">
-          Skillssssadsa
+          Skills
         </a>
         <a href="" className="m-3">
-          Portfolios
+          Portfolio
         </a>
         <a href="" className="m-3">
-          Contacts
+          Contact
         </a>
         <div className="mobile-nav-wrapper">
           <MobileNavigation />
