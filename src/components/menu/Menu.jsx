@@ -14,7 +14,7 @@ const Menu = () => {
           Abouts
         </a>
         <a href="" className="m-3">
-          Skillsss
+          Skillssssadsa
         </a>
         <a href="" className="m-3">
           Portfolios
