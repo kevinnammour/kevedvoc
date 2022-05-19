@@ -1,7 +1,8 @@
 import React from "react";
 import "./about.scss";
 import image from "../../assets/image.webp";
-import { FaRegPaperPlane, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaRegPaperPlane } from "react-icons/fa";
+import { IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -11,14 +12,25 @@ const About = () => {
         <p className="desc-text mt-3">
           I am a Full-Stack developer, tech enthusiast and open-source advocate.
         </p>
-        <div className="btns mt-5">
+        <div className="btns mt-4">
           <button className="lets-talk">
             <span className="me-1">Let's talk</span>{" "}
             <FaRegPaperPlane className="icon" />
           </button>
         </div>
         <div className="social-media mt-5">
-          Check out my
+          <a
+            href="https://www.linkedin.com/in/kevinnammour/"
+            className="me-3"
+          >
+            <IoLogoLinkedin className="sm-link" />
+          </a>
+          <a href="https://github.com/kevinnammour" className="me-3">
+            <IoLogoGithub className="sm-link" />
+          </a>
+          <a href="https://www.instagram.com/kevin.nammour/?hl=en">
+            <IoLogoInstagram className="sm-link" />
+          </a>
         </div>
       </div>
       <div className="image-wrapper">
