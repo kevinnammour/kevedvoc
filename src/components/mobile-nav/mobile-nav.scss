@@ -19,7 +19,7 @@ $yellow: #fcda68;
 }
 
 .mobile-sidebar {
-  background-color: $purple;
+  background-color: $purple !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +47,10 @@ $yellow: #fcda68;
       font-size: 35px;
       color: $purple;
     }
+  }
+
+  .mobile-nav-links-wrapper {
+    background-color: transparent;
   }
 
   .mobile-nav-link-wrapper {

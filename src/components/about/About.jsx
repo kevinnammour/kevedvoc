@@ -19,17 +19,15 @@ const About = () => {
           </button>
         </div>
         <div className="social-media mt-5">
+          <span>Check out my</span>
           <a
             href="https://www.linkedin.com/in/kevinnammour/"
-            className="me-3"
+            className="ms-3 me-3"
           >
             <IoLogoLinkedin className="sm-link" />
           </a>
           <a href="https://github.com/kevinnammour" className="me-3">
             <IoLogoGithub className="sm-link" />
-          </a>
-          <a href="https://www.instagram.com/kevin.nammour/?hl=en">
-            <IoLogoInstagram className="sm-link" />
           </a>
         </div>
       </div>
