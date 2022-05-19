@@ -26,10 +26,10 @@ const About = () => {
               href="https://www.linkedin.com/in/kevinnammour/"
               className="ms-3 me-3"
             >
-              <IoLogoLinkedin className="sm-link" />
+              <IoLogoLinkedin className="sm-link linkedin" />
             </a>
             <a href="https://github.com/kevinnammour" className="me-3">
-              <IoLogoGithub className="sm-link" />
+              <IoLogoGithub className="sm-link github" />
             </a>
           </div>
         </div>
