@@ -1,6 +1,6 @@
 import React from "react";
 import "./menu.scss";
-import logo from "../../assets/purple-logo.png";
+import logo from "../../assets/purple-logo.webp";
 import MobileNavigation from "../mobile-nav/MobileNavigation";
 
 const Menu = () => {
