@@ -6,9 +6,7 @@ function App() {
   return (
     <>
       <Menu />
-      <div className="content-wrapper">
-        <About />
-      </div>
+      <About />
     </>
   );
 }

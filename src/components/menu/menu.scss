@@ -1,3 +1,5 @@
+$bg: #fafcfe;
+
 .menu-wrapper {
   width: 100%;
   height: 100px;
@@ -7,6 +9,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: $bg;
 
   .menu-wrapper-child {
     display: flex;
