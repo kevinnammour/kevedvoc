@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 import image from "../../assets/image.webp";
 import { FaRegPaperPlane } from "react-icons/fa";
-import { IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 const About = () => {
   return (
