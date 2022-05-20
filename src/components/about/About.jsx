@@ -8,7 +8,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 const About = () => {
   return (
     <div className="about-wrapper">
-      <div className="about-content pt-3">
+      <div className="about-content pt-4">
         <div className="desc-wrapper">
           <h1 className="desc-header">Hi, I'm Kevin Nammour</h1>
           <p className="desc-text mt-3">

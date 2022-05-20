@@ -1,9 +1,11 @@
 import React from "react";
 
 const BlobWrapper = () => {
-  return <div className="blob-wrapper">
+  return (
+    <div className="blob-wrapper">
       
-  </div>;
+    </div>
+  );
 };
 
 export default BlobWrapper;

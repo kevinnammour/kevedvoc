@@ -13,11 +13,20 @@ $bg: #fafcfe;
     align-items: center;
 
     .blob-wrapper {
-      background-color: blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 47%;
+      flex-grow: 0;
     }
 
     .pg-lang-wrapper {
-      background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-basis: 47%;
+      flex-grow: 0;
     }
   }
 }
@@ -37,28 +46,11 @@ $bg: #fafcfe;
 @media only screen and (min-width: 700px) {
   .skills-content {
     flex-direction: row;
-
-    // .blob-wrapper {
-    //   width: 500px;
-    // }
-
-    // .pg-lang-wrapper {
-    //   width: 600px;
-    //   height: 500px;
-    // }
   }
 }
 
 @media only screen and (max-width: 700px) {
   .skills-content {
     flex-direction: column;
-
-    // .blob-wrapper {
-    //   width: 100%;
-    // }
-
-    // .pg-lang-wrapper {
-    //   width: 100%;
-    // }
   }
 }
