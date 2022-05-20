@@ -15,9 +15,10 @@ $bg: #fafcfe;
 
     .desc-wrapper {
       display: flex;
-      height: 500px;
       flex-direction: column;
       justify-content: center;
+      flex-basis: 47%;
+      flex-grow: 0;
 
       .desc-header {
         font-size: 45px;
@@ -52,8 +53,8 @@ $bg: #fafcfe;
       .social-media {
         a {
           display: inline-flex;
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           vertical-align: middle;
           align-items: center;
           justify-content: center;
@@ -63,7 +64,7 @@ $bg: #fafcfe;
           color: $black;
 
           .sm-link {
-            font-size: 27.5px;
+            font-size: 25px;
             background-color: #f5f5f5;
             color: $black;
           }
@@ -74,10 +75,13 @@ $bg: #fafcfe;
     .image-wrapper {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
+      flex-basis: 47%;
+      flex-grow: 0;
 
       img {
         width: 100%;
+        max-width: 600px;
         user-select: none;
       }
     }
@@ -99,28 +103,11 @@ $bg: #fafcfe;
 @media only screen and (min-width: 700px) {
   .about-content {
     flex-direction: row;
-
-    .desc-wrapper {
-      width: 500px;
-    }
-
-    .image-wrapper {
-      width: 600px;
-      height: 500px;
-    }
   }
 }
 
 @media only screen and (max-width: 700px) {
   .about-content {
     flex-direction: column;
-
-    .desc-wrapper {
-      width: 100%;
-    }
-
-    .image-wrapper {
-      width: 100%;
-    }
   }
 }
