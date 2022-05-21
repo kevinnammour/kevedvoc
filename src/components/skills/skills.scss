@@ -4,7 +4,8 @@ $purple-shadow: #8974f0a8;
 $bg: #fafcfe;
 
 .skills-wrapper {
-  background-color: red;
+  background-color: $bg;
+  background-image: url("../../assets/blob.svg");
 
   .skills-content {
     min-height: calc(100vh - 100px);
@@ -16,17 +17,38 @@ $bg: #fafcfe;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       flex-basis: 47%;
       flex-grow: 0;
+
+      .blob-header {
+        font-size: 45px;
+        font-weight: bold;
+        color: $black;
+      }
+
+      .blob-text {
+        background-color: $bg;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        padding: 25px;
+        color: $black;
+
+        a {
+          text-decoration: none;
+          color: $purple;
+        }
+      }
     }
 
     .pg-lang-wrapper {
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      flex-direction: column;
+      justify-content: center;
       flex-basis: 47%;
       flex-grow: 0;
+      background-color: blue;
     }
   }
 }
