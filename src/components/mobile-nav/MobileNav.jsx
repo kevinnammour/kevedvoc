@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Resume from "../../assets/Resume.pdf";
+import yellowLogo from "../../assets/yellow-logo.webp";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -34,6 +35,7 @@ const MobileNav = () => {
         initial={false}
       >
         <motion.div className="inner-nav">
+          <img src={yellowLogo} alt="Yellow Logo" />
           <ul className="mobile">
             <li>
               <a href="">About</a>
