@@ -1,0 +1,83 @@
+@import url("../../global.scss");
+
+button.toggle {
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  border: none;
+  background-color: var(--purple);
+  user-select: none;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+
+  .toggle-icon {
+    font-size: 30px;
+    color: var(--bg);
+  }
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  .inner-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+
+    ul.mobile {
+      width: 100%;
+      height: 300px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      & > li {
+        &.resume {
+          a {
+            border: 1px solid var(--yellow);
+            padding: 0.45rem 0.8rem;
+            border-radius: 4px;
+            color: var(--yellow);
+            transition: var(--transition);
+          }
+
+          a:hover {
+            background-color: var(--yellow-shadow);
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--bg);
+          transition: var(--transition);
+
+          &:hover {
+            color: var(--yellow);
+          }
+        }
+      }
+    }
+  }
+}

@@ -39,10 +39,10 @@
       width: auto;
       height: 100%;
 
-      ul {
+      ul.desktop {
         list-style-type: none;
 
-        li {
+        & > li {
           display: inline;
           margin-left: 40px;
 
@@ -71,11 +71,6 @@
           }
         }
       }
-
-      .bi-menu-alt-right {
-        font-size: 40px;
-        color: var(--purple);
-      }
     }
   }
 }
@@ -85,11 +80,11 @@
     margin: 0 50px 0 50px;
 
     .links {
-      ul {
+      ul.desktop {
         display: block;
       }
 
-      .bi-menu-alt-right {
+      .mobile-nav {
         display: none;
       }
     }
@@ -101,11 +96,11 @@
     margin: 0 20px 0 20px;
 
     .links {
-      ul {
+      ul.desktop {
         display: none;
       }
 
-      .bi-menu-alt-right {
+      .mobile-nav {
         display: block;
       }
     }
