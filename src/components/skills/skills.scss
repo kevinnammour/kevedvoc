@@ -5,7 +5,7 @@ $yellow: #fcda68;
 $bg: #fafcfe;
 
 .skills-wrapper {
-  background-color: $yellow;
+  background-color: $purple;
   border-radius: 0px 125px 125px 0px;
 
   .skills-content {
@@ -16,13 +16,13 @@ $bg: #fafcfe;
     .skills-header {
       font-size: 45px;
       font-weight: bold;
-      color: $purple;
+      color: $yellow;
     }
 
     .skills-desc {
       max-width: 750px;
       width: 100%;
-      color: $black;
+      color: $bg;
     }
   }
 }
