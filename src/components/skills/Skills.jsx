@@ -3,7 +3,7 @@ import "./skills.scss";
 
 const Skills = () => {
   return (
-    <div className="skills-wrapper">
+    <div className="skills-wrapper mt-2">
       <div className="skills-content">
         <h1 className="skills-header">&lt;Skills/&gt;</h1>
         <p className="skills-desc mt-3">
