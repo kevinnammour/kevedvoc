@@ -1,0 +1,52 @@
+$purple: #8974f0;
+$black: #212529;
+$purple-shadow: #8974f0a8;
+$yellow: #fcda68;
+$bg: #fafcfe;
+
+.skills-wrapper {
+  background-color: $purple;
+  border-radius: 0px 125px 125px 0px;
+
+  .skills-content {
+    min-height: calc(100vh - 100px);
+    padding: 75px 0;
+    box-sizing: border-box;
+
+    .skills-header {
+      font-size: 45px;
+      font-weight: bold;
+      color: $yellow;
+    }
+
+    .skills-desc {
+      max-width: 750px;
+      width: 100%;
+      color: $bg;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .skills-content {
+    margin: 0 60px 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skills-content {
+    margin: 0 20px 0px 20px;
+  }
+}
+
+// @media only screen and (min-width: 700px) {
+//   .about-content {
+//     flex-direction: row;
+//   }
+// }
+
+// @media only screen and (max-width: 700px) {
+//   .about-content {
+//     flex-direction: column;
+//   }
+// }
