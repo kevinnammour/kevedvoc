@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className="skills-wrapper">
       <div className="skills-content">
-        <h1 className="skills-header">Skills & Experience</h1>
+        <h1 className="skills-header">&lt;Skills/&gt;</h1>
         <p className="skills-desc mt-3">
           Since the beginning of my programming journey, I've collaborated with
           many talented people to create products for both business and consumer
