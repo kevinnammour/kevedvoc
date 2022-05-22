@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+
+:root {
+  --purple: #8974f0;
+  --purple-shadow: rgba(137, 116, 240, 0.1);
+  --bg: #fafcfe;
+  --bg-shadow: #fafcfeef;
+  --black: #212529;
+  --transition: all 0.35s;
+  --nav-height: 100px;
+  --box-shadow: 0 2px 6px hsl(210deg 8% 62% / 10%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: var(--bg);
+}
