@@ -12,14 +12,14 @@ button.toggle {
   align-items: center;
   outline: 0;
   border: none;
-  background-color: var(--purple);
+  background-color: var(--bg);
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 
   .toggle-icon {
     font-size: 30px;
-    color: var(--bg);
+    color: var(--purple);
   }
 }
 
