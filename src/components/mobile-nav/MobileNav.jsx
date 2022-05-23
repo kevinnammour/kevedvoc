@@ -36,25 +36,15 @@ const MobileNav = () => {
       >
         <motion.div className="inner-nav">
           <img src={yellowLogo} alt="Yellow Logo" />
-          <ul className="mobile">
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Skills</a>
-            </li>
-            <li>
-              <a href="">Portfolio</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li className="resume">
-              <a href={Resume} download={true}>
-                Resume
-              </a>
-            </li>
-          </ul>
+          <div className="mobile">
+            <a href="">About</a>
+            <a href="">Skills</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
+            <a className="resume" href={Resume} download={true}>
+              Resume
+            </a>
+          </div>
         </motion.div>
       </motion.nav>
     </div>

@@ -14,13 +14,13 @@ const Nav = () => {
           </a>
         </div>
         <div className="links">
-          <ul className="desktop">
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-            <li className="resume"><a href={Resume} download={true}>Resume</a></li>
-          </ul>
+          <div className="desktop">
+            <a href="">About</a>
+            <a href="">Skills</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
+            <a className="resume" href={Resume} download={true}>Resume</a>
+          </div>
           <MobileNav />
         </div>
       </div>
