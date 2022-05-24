@@ -38,7 +38,7 @@ const About = () => {
             <span>Check out my</span>
             <a
               href="https://www.linkedin.com/in/kevinnammour/"
-              className="ms-3 me-3"
+              className="ms-2 me-2"
               target={"_blank"}
               rel="noopener noreferrer"
             >
@@ -46,7 +46,6 @@ const About = () => {
             </a>
             <a
               href="https://github.com/kevinnammour"
-              className="me-3"
               target={"_blank"}
               rel="noopener noreferrer"
             >
