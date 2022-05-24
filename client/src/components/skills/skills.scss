@@ -1,0 +1,99 @@
+@import url("../../global.scss");
+
+.skills-wrapper {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+
+  .skills-content {
+    display: block;
+    height: auto;
+    color: var(--black);
+
+    .header {
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .skills-boxes {
+      display: grid;
+      grid-gap: 15px;
+
+      .skill-box {
+        border-radius: 5px;
+        padding: 15px;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border: 1px solid var(--purple-shadow);
+        color: var(--black);
+
+        .skill-icon {
+          width: 50px;
+          display: block;
+        }
+
+        .skill-header {
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+
+        .skill-anchors {
+          & > a {
+            text-decoration: none;
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .skills-content {
+    max-width: 1000px;
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skills-content {
+    width: 100%;
+    margin: 0 20px 0 20px;
+  }
+}
+
+// Making the skills boxes responsive
+@media only screen and (max-width: 800px) {
+  .skills-boxes {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    .skill-box {
+      width: 100%;
+      // height: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .skills-boxes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    .skill-box {
+      //   width: 340px;
+      //   height: 340px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .skills-boxes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    .skill-box {
+      //   width: 290px;
+      //   height: 290px;
+    }
+  }
+}
