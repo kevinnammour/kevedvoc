@@ -4,6 +4,11 @@ export default {
   type: "document",
   fields: [
     {
+      name: "index",
+      title: "Index",
+      type: "string",
+    },
+    {
       name: "category",
       title: "Category",
       type: "string",
@@ -14,7 +19,7 @@ export default {
       type: "string",
     },
     {
-      name: "imageurl",
+      name: "imageUrl",
       title: "Image URL",
       type: "image",
       options: {
@@ -27,8 +32,11 @@ export default {
       type: "array",
       of: [
         {
-          type: "string",
-          title: "Tool",
+          type: "image",
+          title: "Tool Image",
+          options: {
+            hotspot: true,
+          }
         },
       ],
     },

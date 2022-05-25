@@ -1,44 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./skills.scss";
-import webApps from "../../assets/web-apps.webp";
-import mobileApps from "../../assets/mobile-apps.webp";
-import programming from "../../assets/programming.webp";
-import database from "../../assets/database.webp";
-import ux from "../../assets/ux.webp";
-import otherTools from "../../assets/other-tools.webp";
+import { urlFor, connection } from "../../connection";
 
 const Skills = () => {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    const getSkills = async () => {
+      const query = '*[_type == "skills"]';
+      connection
+        .fetch(query)
+        .then((data) => {
+          data = data.sort((a, b) => (a.index > b.index ? 1 : -1));
+          return data;
+        })
+        .then((data) => {
+          setSkills(data);
+          console.log(data);
+        });
+    };
+    getSkills();
+  }, []);
 
   return (
     <div className="skills-wrapper">
       <div className="skills-content mt-5 mb-5">
         <h1 className="header">Skills & Services</h1>
         <div className="skills-boxes mt-3">
-          <div className="skill-box">
-            <img className="skill-icon" src={webApps} alt="" />
-            <h2 className="skill-header mt-4">Web development</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste explicabo delectus repellendus eum alias quaerat assumenda, reiciendis at quasi.
-          </div>
-          <div className="skill-box">
-            <img className="skill-icon" src={mobileApps} alt="" />
-            <h2 className="skill-header mt-4">Mobile development</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste explicabo delectus repellendus eum alias quaerat assumenda, reiciendis at quasi.
-          </div>
-          <div className="skill-box">
-            <img className="skill-icon" src={database} alt="" />
-            <h2 className="skill-header mt-4">Database</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste explicabo delectus repellendus eum alias quaerat assumenda, reiciendis at quasi.
-          </div>
-          <div className="skill-box">
-            <img className="skill-icon" src={ux} alt="" />
-            <h2 className="skill-header mt-4">UI/UX design</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste explicabo delectus repellendus eum alias quaerat assumenda, reiciendis at quasi.
-          </div>
-          <div className="skill-box">
-            <img className="skill-icon" src={otherTools} alt="" />
-            <h2 className="skill-header mt-4">Other tools</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste explicabo delectus repellendus eum alias quaerat assumenda, reiciendis at quasi.
-          </div>
+          {skills.length > 0 ? (
+            skills.map((skill) => {
+              return (
+                <div className="skill-box" key={skill._id}>
+                  <img
+                    src={urlFor(skill.imageUrl)}
+                    alt=""
+                    className="skill-icon"
+                  />
+                  <h2 className="skill-header mt-4">{skill.category}</h2>
+                  <p className="mt-3">{skill.description}</p>
+                  <div>
+                    {skill.tools.length > 0 ? (
+                      skill.tools.map((tool) => {
+                        return (
+                          <img
+                            key={tool._key}
+                            style={{ width: "30px", margin: "7.5px" }}
+                            src={urlFor(tool)}
+                            alt=""
+                          />
+                        );
+                      })
+                    ) : (
+                      <></>
+                    )}
+                  </div>
+                </div>
+              );
+            })
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>
