@@ -39,11 +39,9 @@
           font-weight: bold;
         }
 
-        .skill-anchors {
-          & > a {
-            text-decoration: none;
-            color: var(--purple);
-          }
+        .tool-icon {
+          width: 30px;
+          margin: 7.5px;
         }
       }
     }

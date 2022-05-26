@@ -24,7 +24,7 @@ const Skills = () => {
 
   return (
     <div className="skills-wrapper">
-      <div className="skills-content mt-5 mb-5">
+      <div className="skills-content mt-4 mb-3">
         <h1 className="header">Skills & Services</h1>
         <div className="skills-boxes mt-3">
           {skills.length > 0 ? (
@@ -33,20 +33,20 @@ const Skills = () => {
                 <div className="skill-box" key={skill._id}>
                   <img
                     src={urlFor(skill.imageUrl)}
-                    alt=""
+                    alt="Skill"
                     className="skill-icon"
                   />
-                  <h2 className="skill-header mt-4">{skill.category}</h2>
+                  <h2 className="skill-header mt-3">{skill.category}</h2>
                   <p className="mt-3">{skill.description}</p>
                   <div>
                     {skill.tools.length > 0 ? (
                       skill.tools.map((tool) => {
                         return (
                           <img
+                            className="tool-icon"
                             key={tool._key}
-                            style={{ width: "30px", margin: "7.5px" }}
                             src={urlFor(tool)}
-                            alt=""
+                            alt="Tool"
                           />
                         );
                       })
