@@ -15,9 +15,21 @@
     <meta name="author" content="Kevin Nammour" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Kevin Nammour - Full Stack developer</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="preloader">
+      <div class="loader"></div>
+      <div class="turn"></div>
+    </div>
     <div id="root"></div>
+    <script>
+      var loader = document.getElementById("preloader");
+      var root = document.getElementById("root");
+      window.addEventListener("load", () => {
+        loader.style.display = "none";
+        root.style.display = "block";
+      });
+    </script>
   </body>
 </html>

@@ -1,34 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./skills.scss";
-import { urlFor, connection } from "../../connection";
+import { urlFor } from "../../connection";
 
-const Skills = () => {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    const getSkills = async () => {
-      const query = '*[_type == "skills"]';
-      connection
-        .fetch(query)
-        .then((data) => {
-          data = data.sort((a, b) => (a.index > b.index ? 1 : -1));
-          return data;
-        })
-        .then((data) => {
-          setSkills(data);
-          console.log(data);
-        });
-    };
-    getSkills();
-  }, []);
-
+const Skills = (props) => {
   return (
     <div className="skills-wrapper">
       <div className="skills-content mt-4 mb-3">
         <h1 className="header">Skills & Services</h1>
         <div className="skills-boxes mt-3">
-          {skills.length > 0 ? (
-            skills.map((skill) => {
+          {props?.skills?.length > 0 ? (
+            props?.skills?.map((skill) => {
               return (
                 <div className="skill-box" key={skill._id}>
                   <img

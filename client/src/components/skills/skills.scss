@@ -1,7 +1,7 @@
 @import url("../../global.scss");
 
 .skills-wrapper {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 85px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,10 @@
       grid-gap: 15px;
 
       .skill-box {
-        border-radius: 5px;
+        border-radius: 20px;
         padding: 15px;
         box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
         border: 1px solid var(--purple-shadow);
         color: var(--black);
 
