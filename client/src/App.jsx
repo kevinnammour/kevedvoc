@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import About from "./components/about/About";
 import Nav from "./components/nav/Nav";
 import Skills from "./components/skills/Skills";
+import Portfolio from "./components/portfolio/Portfolio";
 import { connection } from "./connection";
 
 const App = () => {
@@ -25,7 +26,14 @@ const App = () => {
     <>
       <Nav />
       <About />
-      {skills?.length > 0 ? <Skills skills={skills} /> : <></>}
+      {skills?.length > 0 ? (
+        <>
+          <Skills skills={skills} /> 
+          {/* <Portfolio /> */}
+        </>
+      ) : (
+        <></>
+      )}
     </>
   );
 };

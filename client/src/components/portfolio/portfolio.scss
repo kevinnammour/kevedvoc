@@ -1,0 +1,30 @@
+@import url("../../global.scss");
+
+.portfolio-wrapper {
+  min-height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+
+  .portfolio-content {
+    display: block;
+    height: auto;
+    color: var(--black);
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .portfolio-content {
+    max-width: 1000px;
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio-content {
+    width: 100%;
+    margin: 0 20px 0 20px;
+  }
+}
