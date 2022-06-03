@@ -5,13 +5,13 @@ import { urlFor } from "../../connection";
 const Skills = (props) => {
   return (
     <div className="skills-wrapper">
-      <div className="skills-content mt-4 mb-3">
+      <div className="skills-content mt-4 mb-5">
         <h1 className="header">Skills & Services</h1>
         <div className="skills-boxes mt-3">
           {props?.skills?.length > 0 ? (
             props?.skills?.map((skill) => {
               return (
-                <div className="skill-box" key={skill._id}>
+                <div className="skill-box" key={skill.index}>
                   <img
                     src={urlFor(skill.imageUrl)}
                     alt="Skill"

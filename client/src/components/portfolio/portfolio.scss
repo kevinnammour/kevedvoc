@@ -11,13 +11,78 @@
     display: block;
     height: auto;
     color: var(--black);
-    background-color: red;
+    margin-top: 140px;
+
+    .header {
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .projects-wrapper {
+      .project {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        height: 250px;
+        position: relative;
+
+        img {
+          height: auto;
+          height: 100%;
+        }
+
+        .text {
+          h2 {
+            font-size: 1.6em;
+            font-weight: bold;
+          }
+
+          p {
+            max-width: 400px;
+          }
+
+          .github {
+            font-size: 25px;
+            color: var(--black);
+            transition: var(--transition);
+          }
+
+          .demo {
+            font-size: 28px;
+            color: var(--black);
+            transition: var(--transition);
+          }
+
+          .demo:hover,
+          .github:hover {
+            color: var(--purple);
+          }
+        }
+      }
+
+      .project:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+
+      .project:nth-child(odd) {
+        flex-direction: row;
+      }
+
+      .other-projects {
+        a {
+          color: var(--purple);
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 800px) {
   .portfolio-content {
     max-width: 1000px;
+    width: 1000px;
     margin: 0 50px 0 50px;
   }
 }
@@ -26,5 +91,34 @@
   .portfolio-content {
     width: 100%;
     margin: 0 20px 0 20px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .project:nth-child(even) {
+    .text {
+      margin-right: 30px;
+    }
+  }
+
+  .project:nth-child(odd) {
+    .text {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project {
+    img {
+      position: absolute;
+      opacity: 0.1;
+    }
+
+    .text {
+      h2 {
+        color: var(--purple);
+      }
+    }
   }
 }

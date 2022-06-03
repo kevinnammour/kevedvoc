@@ -7,6 +7,7 @@ import { connection } from "./connection";
 
 const App = () => {
   const [skills, setSkills] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const getSkills = async () => {
@@ -19,7 +20,22 @@ const App = () => {
         })
         .then((data) => setSkills(data));
     };
+
+    const getProjects = async () => {
+      const query = '*[_type == "projects"]';
+      connection
+        .fetch(query)
+        .then((data) => {
+          data = data.sort((a, b) => (a.index > b.index ? 1 : -1));
+          return data;
+        })
+        .then((data) => {
+          setProjects(data);
+        });
+    };
+
     getSkills();
+    getProjects();
   }, []);
 
   return (
@@ -28,8 +44,14 @@ const App = () => {
       <About />
       {skills?.length > 0 ? (
         <>
-          <Skills skills={skills} /> 
-          {/* <Portfolio /> */}
+          <Skills skills={skills} />
+        </>
+      ) : (
+        <></>
+      )}
+      {projects?.length > 0 ? (
+        <>
+          <Portfolio projects={projects} />
         </>
       ) : (
         <></>

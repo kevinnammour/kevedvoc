@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.scss";
-import purpleLogo from "../../assets/purple-logo.webp";
-import Resume from "../../assets/Resume.pdf";
+import purpleLogo from "../../assets/images/purple-logo.webp";
+import Resume from "../../assets/pdfs/Resume.pdf";
 import MobileNav from "../mobile-nav/MobileNav";
 
 const Nav = () => {

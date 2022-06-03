@@ -8,6 +8,7 @@
   height: var(--nav-height);
   background-color: var(--bg);
   box-shadow: var(--box-shadow);
+  z-index: 100;
 
   .nav-content {
     display: flex;

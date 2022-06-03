@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Resume from "../../assets/Resume.pdf";
-import yellowLogo from "../../assets/yellow-logo.webp";
+import Resume from "../../assets/pdfs/Resume.pdf";
+import yellowLogo from "../../assets/images/yellow-logo.webp";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";

@@ -4,7 +4,7 @@ import { FaRegPaperPlane } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { IoLogoGithub } from "react-icons/io5";
 import { motion } from "framer-motion";
-import devVector from "../../assets/dev-vector.svg";
+import devVector from "../../assets/images/dev-vector.svg";
 
 const About = () => {
   return (
